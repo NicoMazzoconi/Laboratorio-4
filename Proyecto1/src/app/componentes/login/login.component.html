@@ -1,0 +1,17 @@
+
+  <h1>Iniciar sesión</h1>
+
+
+<input type="text" [(ngModel)]="usuario.nombre">
+<input type="password" [(ngModel)]="usuario.clave">
+<button type="submit" id="login-button" (click)="Ingresar()">Login</button>
+<button type="submit" id="register-button">Register</button>
+
+<div *ngIf="ingresado">
+  <p>{{usuario.nombre}}</p>
+</div>
+
+
+<div [hidden]="!ingresado">
+    <p>{{usuario.nombre}}</p>
+</div>
