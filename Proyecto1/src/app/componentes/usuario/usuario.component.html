@@ -1,0 +1,8 @@
+<H1>Agregar Usuario</H1>
+<label for="nombre">Nombre</label>
+<input type="text" [(ngModel)]="completar.nombre"><br>
+<label for="clave">Clave</label>
+<input type="password" [(ngModel)]="completar.clave"><br>
+
+<button (click)="agregarUsuario()" *ngIf="!completarBool">Guardar</button>
+<button *ngIf="completarBool" (click)="cancelar()">Cancelar</button>

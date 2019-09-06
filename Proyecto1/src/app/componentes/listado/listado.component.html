@@ -1,0 +1,7 @@
+<div *ngFor="let usuario of usuarios">
+  <p>
+    {{usuario.nombre}}
+    {{usuario.clave}}
+    <button (click)="modificar(usuario)">Modificar</button>
+  </p>
+</div>
