@@ -1,0 +1,19 @@
+<table border=1>
+	<thead>
+		<th>legajo</th>
+		<th>materia</th>
+		<th>apellido</th>
+		<th>detalle</th>
+
+	</thead>
+  <tbody>
+
+
+<tr *ngFor="let alumno of listadoAlumnos" app-fila-alumno [unAlumno]="alumno" (alumnoSeleccionado)="mostrarDetalles($event)" >
+
+ </tr>
+
+
+
+  </tbody>
+</table>
